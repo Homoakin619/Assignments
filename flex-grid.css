@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  
+  body {
+      box-sizing: border-box;
+      font-family: "Lexend Deca";
+      font-size: 15px;
+  }
+  .top {
+    padding: 10px;
+  }
+  .container {
+      width: 90%;
+      margin: auto;
+      box-sizing: border-box;
+      display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section1, .section2, .section3 {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 15%;
+  }
+  
+  .section1 {
+      background: hsl(31, 77%, 52%);
+      border-radius: 5px 0 0 5px;
+  }
+  
+  .section2 {
+      background: hsl(184, 100%, 22%);
+  }
+  
+  .section3 {
+      background: hsl(179, 100%, 13%);
+      border-radius: 0 5px 5px 0;
+  }
+  
+  p.white {
+      color: hsla(0, 0%, 100%, 0.75);
+  }
+  
+  h1 {
+      font-family: "Big Shoulders Display";
+      margin-top: 25px;
+  }
+  
+  a.white, h1.white {
+      color: hsl(0, 0%, 95%);
+  }
+  
+  .btn {
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      display: inline-block;
+      text-decoration: none;
+  }
+  
+  .text {
+      height: 40%;
+      margin: 20px 0 20px 0;
+  }
+  
+  @media screen and (min-width: 961px) and (max-width:1441px) {
+    .container {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  
+      .section1, .section2, .section3 {
+          width: 33.3%;
+          padding: 5%;
+      }
+  
+      .btn {
+          margin-top: 20px;
+      }
+  }
+  
+  .grid-main {
+      display: grid;
+      grid-template-areas: 
+      'a a b'
+      'c d d'
+      'c e e';
+      gap: 10px;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  
+  
+  .box1,.box2,.box3,.box4,.box5 {
+      text-align: center;
+      color: #fff;
+      min-height: 100px;
+  }
+  
+  .box1 {
+      background-color: #EB5020;
+      grid-area: a;
+  }
+  
+  .box2 {
+      background-color: #FFA401;
+      grid-area: b;
+  }
+  
+  .box3 {
+      background-color: #05AA42;
+      grid-area: c;
+  }
+  
+  .box4 {
+      background-color: #01AEFD;
+      grid-area: d;
+  }
+  
+  .box5 {
+      background-color: #01AEFD;
+      grid-area: e;
+  }
+  
+  
